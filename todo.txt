@@ -1,0 +1,16 @@
+- Checken cross nodes/clusters - Werkt inherently door service discovery in de controlplane die alle nodes kent
+
+- Frontend content serving - Frontend kan niet bij k8s service discover, moet via ingress
+
+- Rabbitmq checken, fanout/topic. Bedrijfsupdate vs inmemory data
+- Ingress - TODO
+
+
+Stap 1 - Ingress
+- Testen of load balancing werkt ipv port forwarding
+Stap 2 - Frontend via ingress
+
+
+Vraag multiple ingress voor sub domains? salesapi.uname-it.nl via dezelfde ingress als mijnlef.nl/api/identity/getcompanies?
+Dubbelcheck, doet ingress load balancing?
+

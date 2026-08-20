@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consoleapp1-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: consoleapp1-pod-label
+  template:
+    metadata:
+      labels:
+        app: consoleapp1-pod-label
+    spec:
+      containers:
+        - name: consoleapp1-container
+          image: consoleapp1:20260704-160205
+          ports:
+            - containerPort: 8080
